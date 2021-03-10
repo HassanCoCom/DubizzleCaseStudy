@@ -19,9 +19,11 @@
 		177DE5BD25F8AA7200B34BAA /* DubizzleImageCacher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 177DE5A725F8AA7100B34BAA /* DubizzleImageCacher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		177DE5E125F8AAA700B34BAA /* ImageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177DE5DF25F8AAA700B34BAA /* ImageObject.swift */; };
 		177DE5E225F8AAA700B34BAA /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177DE5E025F8AAA700B34BAA /* ImageCacher.swift */; };
-		177DE60925F8AC4900B34BAA /* DubizzleCaseStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0237F25F758B900A71F25 /* DubizzleCaseStudyTests.swift */; };
-		177DE60A25F8AC4900B34BAA /* DubizzleCaseStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0238A25F758B900A71F25 /* DubizzleCaseStudyUITests.swift */; };
 		177DE61925F8ACE200B34BAA /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177DE61825F8ACE200B34BAA /* SetupViewController.swift */; };
+		177DE62F25F8AE8300B34BAA /* TestHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177DE62B25F8AE8300B34BAA /* TestHome.swift */; };
+		177DE63025F8AE8300B34BAA /* MockHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177DE62C25F8AE8300B34BAA /* MockHomeInteractor.swift */; };
+		177DE63125F8AE8300B34BAA /* MockHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177DE62D25F8AE8300B34BAA /* MockHomeRouter.swift */; };
+		177DE63225F8AE8300B34BAA /* MockHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177DE62E25F8AE8300B34BAA /* MockHomeViewController.swift */; };
 		17D0236925F758B600A71F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0236825F758B600A71F25 /* AppDelegate.swift */; };
 		17D0237025F758B600A71F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D0236E25F758B600A71F25 /* Main.storyboard */; };
 		17D0237525F758B900A71F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D0237325F758B900A71F25 /* LaunchScreen.storyboard */; };
@@ -136,6 +138,10 @@
 		177DE5DF25F8AAA700B34BAA /* ImageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageObject.swift; sourceTree = "<group>"; };
 		177DE5E025F8AAA700B34BAA /* ImageCacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacher.swift; sourceTree = "<group>"; };
 		177DE61825F8ACE200B34BAA /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		177DE62B25F8AE8300B34BAA /* TestHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHome.swift; sourceTree = "<group>"; };
+		177DE62C25F8AE8300B34BAA /* MockHomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomeInteractor.swift; sourceTree = "<group>"; };
+		177DE62D25F8AE8300B34BAA /* MockHomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomeRouter.swift; sourceTree = "<group>"; };
+		177DE62E25F8AE8300B34BAA /* MockHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomeViewController.swift; sourceTree = "<group>"; };
 		17D0236525F758B600A71F25 /* DubizzleCaseStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubizzleCaseStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D0236825F758B600A71F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D0236F25F758B600A71F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -277,6 +283,17 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		177DE62A25F8AE8300B34BAA /* HomeTest */ = {
+			isa = PBXGroup;
+			children = (
+				177DE62B25F8AE8300B34BAA /* TestHome.swift */,
+				177DE62C25F8AE8300B34BAA /* MockHomeInteractor.swift */,
+				177DE62D25F8AE8300B34BAA /* MockHomeRouter.swift */,
+				177DE62E25F8AE8300B34BAA /* MockHomeViewController.swift */,
+			);
+			path = HomeTest;
+			sourceTree = "<group>";
+		};
 		17D0235C25F758B600A71F25 = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +340,7 @@
 		17D0237E25F758B900A71F25 /* DubizzleCaseStudyTests */ = {
 			isa = PBXGroup;
 			children = (
+				177DE62A25F8AE8300B34BAA /* HomeTest */,
 				17D0237F25F758B900A71F25 /* DubizzleCaseStudyTests.swift */,
 				17D0238125F758B900A71F25 /* Info.plist */,
 			);
@@ -823,8 +841,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				177DE60925F8AC4900B34BAA /* DubizzleCaseStudyTests.swift in Sources */,
-				177DE60A25F8AC4900B34BAA /* DubizzleCaseStudyUITests.swift in Sources */,
 				17D024EB25F75FEC00A71F25 /* Items.swift in Sources */,
 				17D0250B25F75FEC00A71F25 /* DetailsViewController.swift in Sources */,
 				17D023BF25F75A0700A71F25 /* UIViewExtension.swift in Sources */,
@@ -874,7 +890,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177DE62F25F8AE8300B34BAA /* TestHome.swift in Sources */,
 				17D0238025F758B900A71F25 /* DubizzleCaseStudyTests.swift in Sources */,
+				177DE63025F8AE8300B34BAA /* MockHomeInteractor.swift in Sources */,
+				177DE63125F8AE8300B34BAA /* MockHomeRouter.swift in Sources */,
+				177DE63225F8AE8300B34BAA /* MockHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
