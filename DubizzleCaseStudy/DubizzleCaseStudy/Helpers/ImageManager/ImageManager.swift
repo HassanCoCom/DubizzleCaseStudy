@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import BayutDubizzleImageCacher
+import DubizzleImageCacher
 
 class ImageManager {
     
